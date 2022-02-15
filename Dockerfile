@@ -7,8 +7,9 @@ RUN if [ "$NODE_ENV" = "development" ]; then \
     echo 'IN IF'; \
     npm install ; \
     else \
-    echo 'IN ELSE'; \
+    echo 'IN ELSE 1'; \
     npm install --production ; \
+    echo 'IN ELSE 2'; \
     fi
 
 COPY . ./
